@@ -5,7 +5,7 @@ class PagesController < ApplicationController
 #badString = gets.chomp
 #badArray = badString.chars.to_a
 #badArray.map{|a| print transcriptHash[a]}
-	 if params[:q] != ""
+	 if params[:q] != "" and params[:q]
 		 @badArray=params[:q].chars.to_a
 		 @goodArray=[]
 		 @badArray.map{|a| @goodArray.push(@transcriptHash[a])}
