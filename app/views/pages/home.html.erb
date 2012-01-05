@@ -1,9 +1,15 @@
-<h1>Транскриптор 0.1</h1>
-	<%= form_tag("/", :method => "get") do %>
-        <%= label_tag(:q, "Введите текст:") %>
-	<%= text_field_tag(:q) %>
-	<%= submit_tag("Что здесь написано?") %>
-<% end %>
 
-<h3><%= @result %></h3>
+
+
+<div class="box center success ">
+	<h1 class="alt center">Транскриптор</h1>
+	<%= form_tag("/", :method => "get") do %>
+		<%= label_tag(:q, "Введите текст:") %>
+	<%= text_field_tag(:q,nil, :size=>"60") %>
+	<%= submit_tag("Что здесь написано?") %>
+	<% end %>
+
+	<h3 class="alt notice prepend-top"><%= @result %></h3>
+</div>
+
 
