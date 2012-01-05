@@ -11,7 +11,7 @@ class PagesController < ApplicationController
 		 @badArray.map{|a| @goodArray.push(@transcriptHash[a])}
 		 @goodArray = @goodArray.join
 		 @badArray = @badArray.join
-		 @result = "#{@badArray} это:  #{@goodArray}" 
+		 @result = "\"#{@badArray}\" это:  \"#{@goodArray}\"" 
 
 	 else
 		@badArray=['привет']
