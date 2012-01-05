@@ -9,7 +9,7 @@ class PagesController < ApplicationController
 		 @goodArray=[]
 		 @badArray.map{|a| @goodArray.push(@transcriptHash[a])}
 		 @goodArray = @goodArray.join
-
+		 @result = "#{@badArray} это:  #{@goodArray}" 
 
 	 else
 		@badArray=['привет']
